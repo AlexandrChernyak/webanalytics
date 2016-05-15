@@ -1,0 +1,174 @@
+/* css файл панели оптимизатора */
+
+/* панель управления */
+.panelcontrolline {
+  padding: /*12px 4px 8px 4px*/6px 4px; background: #F8F8F8/*url(img/toplinebg.png) #FFFFFF repeat-x top left*/; 
+  border-bottom: 1px solid #E1E1E1; position: relative; z-index: 20;
+  /*border-left: 1px solid #808080; border-right: 1px solid #808080; border-top: 1px solid #808080*/
+}
+
+a.addnewurlbutton {
+ background: url(img/add.png) no-repeat top left; padding-left: 18px; text-decoration: none; color: #000000	
+}
+a.addnewurlbutton:hover { color: #FF0000 }
+
+.p_delete { 
+ display: inline-block; width: 17px; height: 17px;  background: url(img/erase.png) transparent no-repeat top left;
+ border: none; cursor: pointer;  
+}
+.p_delete:active { position: relative; top: 1px; left: 1px; }
+
+.p_update { 
+ display: inline-block; width: 17px; height: 17px;  background: url(img/update.png) transparent no-repeat top left;
+ border: none; cursor: pointer;
+}
+.p_update:active { position: relative; top: 1px; left: 1px; }
+
+.p_options { 
+ width: 17px; height: 17px;  background: url(img/options.png) transparent no-repeat top left; 
+ border: none; cursor: pointer;    
+}
+.p_options:active { position: relative; top: 1px; left: 1px; }
+
+.p_options_sect { 
+ width: 17px; height: 17px;  background: url(img/options_sect.png) transparent no-repeat top left; 
+ border: none; cursor: pointer;    
+}
+.p_options_sect:active { position: relative; top: 1px; left: 1px; }
+
+.p_add_sect { 
+ width: 17px; height: 17px;  background: url(img/add.png) transparent no-repeat top left; 
+ border: none; cursor: pointer;    
+}
+.p_add_sect:active { position: relative; top: 1px; left: 1px; }
+
+/* блок данных панели, список сайтов */
+.panelblockline { 
+  /*margin-top: 8px;*/ padding: 12px 4px 6px 4px; min-height: 250px; background: #F8F8F8; 
+  /*border-left: 1px solid #808080; border-right: 1px solid #808080;*/ border: none;  position: relative; z-index: 15;
+}
+
+/* блок нижний части панели */
+.panelbuttomline { /*border-top: 1px solid #808080;*/ border: none; white-space: nowrap; }
+
+.sectionbutton, .sectionbutton_selected { 
+ display: inline-block; position: relative; top: -1px; padding: 3px; cursor: pointer;
+ border: 1px solid #808080; border-top: 1px solid #FFFFFF; background: #FFFFFF; margin-left: 6px;
+}
+.sectionbutton { background: transparent; top: 2px; color: #696969; border: none }
+.sectionbutton:hover { color: #FF0000; background: #F5F5F5; }
+.sectionbutton_selected { 
+ font-weight: bold; cursor: default; background: #F8F8F8; 
+ border: none; padding-left: 5px; padding-right: 5px; 
+}
+.sectionbutton_selected label { font-weight: normal; }
+
+.addnewsection_buttom { position: relative; top: 2px; left: 2px; //top:1px; }
+
+.closesectionbutton { padding-left: 7px; color: #000000; font-weight: bold; }
+.closesectionbutton:hover { color: #FF0000; cursor: pointer; }
+.sectionbutton .closesectionbutton:hover { color: #0000FF; cursor: pointer; }
+.sectionbutton_selected .closesectionbutton { color: #0000FF; cursor: pointer; font-weight: bold; }
+.sectionbutton_selected .closesectionbutton:hover { color: #FF0000; cursor: pointer; }
+.sectionbutton .closesectionbutton:active { position: relative; top: 1px; left: 1px;  }
+.sectionbutton_selected .closesectionbutton:active { position: relative; top: 1px; left: 1px;  }
+
+.sectionmoveitem { padding: 4px 2px 4px 2px; background: #D6D6D6; border-bottom: 2px solid #FFFFFF; }
+.sectionmoveitem:hover { background: #DFDFDF; color: #0000FF; }
+
+/* полукруглый блок оконтовки */
+.p-inner-box {padding:1em;}
+.p-r1, .p-r2, .p-r3, .p-r4, .p-r5 { display: block; height: 1px; overflow: hidden; font-size:1px;}
+.p-r5 { margin: 0 5px; } .p-r4 { margin: 0 4px; } .p-r3 { margin: 0 3px; }
+.p-r2 { margin: 0 2px; } .p-r1 { margin: 0 1px; }
+#p-rounded-box-5 { margin: 1em; margin-top: 3px; }
+.p-inner-box, #p-rounded-box-5 b { background-color: #e3e4e8; }
+#p-rounded-box-5 .p-inner-box { padding: 0.7em 1em;}
+.p-inner-box p { color: #6C6C6C; font-size: 95%; }
+ 
+/* таблица списка сайтов */
+#urllisthead { background: #DADDE0; } /* DADDE0 or C5CACF */
+#urllisthead th { 
+ padding: 4px; border-left: 1px solid #FFFFFF; color: #000000; font-weight: normal; white-space: nowrap;	
+}
+.checkboxitem { cursor: pointer }
+
+.urlpitemtr {  }
+.urlpitemtr td { padding: 6px 4px; border-bottom: 1px solid #EBEDEC; font-size: 11px; white-space: nowrap; }
+.urlpitemtr td a { text-decoration: none; font-size: 11px; }
+.urlpitemtr td a.blackc { color: #000000; text-decoration: none; font-size: 11px;}
+.urlpitemtr td a.blackc:hover { text-decoration: underline }
+.urlpitemtr td sup { font-size: 11px; }
+
+.urlpitemtr td.urlblockidentmove {
+ background: url(img/urlmoveobj.png) transparent no-repeat right center;
+ width: 8px; cursor: move;	
+}
+
+
+#statuscountelementitem { margin-left: 55px; font-style: italic }
+#statuscountelementitem label { color: #000000; font-weight: bold }
+
+/* блоки меню */
+.blockmenuitemshead { display: inline-block; z-index: 3800; }
+.blockmenuitemshead ul, .blockmenuitemshead li{ margin:0; border:0; list-style:none; padding:0; }
+.blockmenuitemshead ul { position:relative; }
+.blockmenuitemshead li { position:relative; }
+.blockmenuitemshead .blockitemsbody {
+ display:none; position:absolute; margin-top:18px; border-top:solid 1px #E5E5E5; border-left:solid 1px #E5E5E5; 
+ border-right:solid 1px #999999; border-bottom:solid 1px #999999; padding:4px; top:2px; width:auto; min-width: 100px; 
+ background:#FFFFFF; z-index: 3700;
+}
+
+.blockmenuitemshead .blockitemsbody .divblocked { padding: 3px 2px;	}
+
+.blockmenuitemshead .blockitemsbody .divseparator { 
+ padding: 4px 2px; background: url(img/separatorline3.png) transparent repeat-x center; 
+ text-align: center; padding-top: 7px;
+}
+.blockmenuitemshead .blockitemsbody .divseparator span { 
+ background: #FFFFFF; padding: 0px 2px; font-size: 11px; color: #808080; position: relative; top: -2px; 
+}
+
+.blockmenuitemshead .blockitemsbody a{ display: inline-block; font-size: 11px; font-style: normal; }
+
+.blockmenuitemshead .blockitemsbody #sectioninfo a { display: block; }
+
+.blockmenuitemshead .blockitemsbody a.delete{ 
+ background: url(img/erase.png) transparent no-repeat top left; padding-left: 18px; 
+}
+.blockmenuitemshead .blockitemsbody a.update{ 
+ background: url(img/update.png) transparent no-repeat top left; padding-left: 18px; 
+}
+.blockmenuitemshead .blockitemsbody a.export{ 
+ background: url(img/export.png) transparent no-repeat top left; padding-left: 18px; 
+}
+
+
+
+.blockmenuitemshead .menuclickitem { 
+ cursor: pointer; padding: 2px 20px 2px 2px; background: url(img/arrow.png) no-repeat center right; 
+ border: 1px solid transparent; z-index: 3750;
+}
+
+.blockmenuitemshead .menuclickitem.selected {	
+ background: url(img/arrow_select.png) #FFFFFF no-repeat center right;
+ border-top:solid 1px #E5E5E5; border-left:solid 1px #E5E5E5; border-right:solid 1px #999999;	
+}
+
+.blockmenuitemshead .menuclickitem:hover { 
+ background: url(img/arrow_hover.png) transparent no-repeat center right; 	
+}
+.blockmenuitemshead .menuclickitem.selected:hover {
+ background: url(img/arrow_hover.png) #FFFFFF no-repeat center right;
+}
+
+/** лог ошибок */
+.logerrorslist {
+ display: block; position: absolute; top: 10px; left: 10px; padding: 10px 10px 0px 10px;
+ border: 2px solid #969696; background: #E3E4E8; width: 400px; height: auto; z-index: 3100;	
+}
+.logerrorslist #blocklogerrors { background: #FFFFFF; max-height: 600px; overflow: auto; }
+.logerrorslist #blocklogerrors div { padding: 2px; border-bottom: 1px solid #E8E8E8; font-size: 11px }
+
+.bgnoregplqw { margin-top: 50px; }

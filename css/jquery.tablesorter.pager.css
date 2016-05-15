@@ -1,0 +1,24 @@
+.pager {
+ padding: 0 6px 3px 0;
+ position: static;
+}
+.pager span {
+	padding: 0 5px 0 5px;
+}
+.pager input.prev {
+	width: auto;
+	margin-right: 10px;
+}
+.pager input.next {
+	width: auto;
+	margin-left: 10px;
+}
+.pager input {	
+	width: 50px;
+	border: 1px solid #E4D9CB;
+	text-align: center;
+}
+.pager .pagesize {
+ border: 1px solid #E4D9CB;
+ height: 20px;	
+}

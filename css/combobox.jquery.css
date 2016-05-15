@@ -1,0 +1,12 @@
+
+.ui-autocomplete { overflow-y:auto; max-height:200px; }
+.ui-autocomplete .ui-state-focus { border:1px dotted ActiveBorder; background:Highlight; margin-left:-1px; margin-bottom:1px; }
+.ui-autocomplete .ui-state-focus a { color:HighlightText; }
+.ui-autocomplete .ui-state-hover { position:relative; border-color:#333; color:black !important; }
+.ui-autocomplete .combobox-select-all,
+.ui-autocomplete .combobox-select-all a { font-weight:bold !important; }
+
+.ui-combobox { position:relative; display:block; }
+.ui-combobox input { padding:2px; vertical-align:middle; min-width:320px; outline:none; }
+.ui-combobox button {  padding:0; width:30px; height:25px; vertical-align:middle; margin-left:-4px; font:12px "Times New Roman", Times, serif; }
+.ui-menu-item .help { cursor:help; color:#666; }
